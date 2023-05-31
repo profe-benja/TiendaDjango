@@ -20,5 +20,5 @@ from sucursal import views
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("producto", views.index, name="producto.index")
+    path("productos", views.index, name="producto.index")
 ]

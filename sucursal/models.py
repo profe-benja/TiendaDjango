@@ -20,7 +20,7 @@ class Usuario(models.Model):
 
 class Producto(models.Model):
     nombre = models.CharField(max_length=100)
-    descripcio = models.CharField(max_length=256)
+    descripcion = models.CharField(max_length=256)
     codigo = models.CharField(max_length=100, unique=True)
     precio = models.IntegerField()
     foto = models.FileField(upload_to="uploads/", null=True, blank=True)
